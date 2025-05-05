@@ -35,8 +35,8 @@ const updateBoard = () => {
             squareEls[index].innerText = 'O';
         } else if (cell === '') {
             squareEls[index].innerText = '';
-        };
-    });
+        }
+    })
 };
 
 const updateMessage = () => {
@@ -71,7 +71,7 @@ const checkForWinner = () => {
         if (board[win[0]] && board[win[0]] === board[win[1]] && board[win[1]] === board[win[2]]) {
             winner = true;
         }
-    });
+    })
 };
 
 const checkForTie = () => {
